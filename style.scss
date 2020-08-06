@@ -1,0 +1,59 @@
+// Root
+body {
+    background: #eee;
+}
+
+// Blocks
+.page {
+    padding: 40px;
+
+    background: #fff;
+}
+
+.title {
+    margin: 0 0 20px 0;
+}
+
+.field {
+    display: flex;
+    flex-flow: column;
+
+    &__error-message {
+        margin-bottom: 10px;
+
+        color: red;
+    }
+    &__label {
+        margin-bottom: 5px;
+    }
+}
+
+.text-input {
+    padding: 10px 10px;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+// Layouts
+.l-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.l-row {
+    display: flex;
+    align-items: flex-end;
+
+    padding: 10px 0;
+
+    &__col {
+        flex: 1 1 0;
+
+        margin-right: 40px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

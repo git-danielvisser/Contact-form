@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./validate.js"></script>
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <div class="page">
+
+        <h1 class="title">Contact form</h1>
+        <form class="form" method="post">
+
+          <!-- First and last name -->
+          <div class="l-row">
+            <div class="l-row__col">
+              <div class="field" id="first-name-field">
+                <label class="field__label" for="first_name">*First Name</label>
+                <input class="text-input js-input" id="first-name" name="first_name" type="text" placeholder="Jack" required>
+              </div>
+            </div>
+            <div class="l-row__col">
+              <div class="field" id="last-name-field">
+                <label class="field__label" for="last_name">*Last Name</label>
+                <input class="text-input js-input" id="last-name" name="last_name" type="text" placeholder="Jones" required>
+              </div>
+            </div>
+          </div><!-- End l-row -->
+
+          <!-- Email and phone number -->
+          <div class="l-row">
+            <div class="l-row__col">
+              <div class="field" id="email-field">
+                <label class="field__label" for="email">*Email</label>
+                <input class="text-input js-input" id="email" name="email" type="text" placeholder="jack@gmail.com" required>
+              </div>
+            </div>
+            <div class="l-row__col">
+              <div class="field" id="phone-number-field">
+                <label class="field__label" for="phone">*Phone number</label>
+                <input class="text-input js-input" id="phone" name="phone" type="text" placeholder="06-45940392" required>
+              </div>
+            </div>
+          </div><!-- End l-row -->
+
+          <!-- Optional adress -->
+          <div class="l-row">
+            <div class="l-row__col">
+              <div class="field" id="place-name-field">
+                <label class="field__label" for="place-name">Place name</label>
+                <input class="text-input js-input" id="place-name" type="text" placeholder="Alkmaar">
+              </div>
+            </div>
+            <div class="l-row__col">
+              <div class="field" id="zipcode-field">
+                <label class="field__label" for="zipcode">Zip code</label>
+                <input class="text-input js-input" id="zipcode" name="zipcode" type="text" placeholder="1832 AD">
+              </div>
+            </div>
+          </div><!-- End l-row -->
+
+          <div class="l-row">
+            <div class="l-row__col">
+              <div class="field" id="street-name-field">
+                <label class="field__label" for="street-name">Street</label>
+                <input class="text-input js-input" id="street-name" name="street" type="text" placeholder="Dominostraat">
+              </div>
+            </div>
+            <div class="l-row__col">
+              <div class="field" id="street-number-field">
+                <label class="field__label" for="street_number">Number</label>
+                <input class="text-input js-input" id="street_number" name="street_number" type="text" placeholder="23E">
+              </div>
+            </div>
+           </div><!-- End l-row -->
+
+          <!-- Message -->
+          <div class="l-row">
+            <div class="l-row__col">
+              <div class="field" id="message-field">
+                <label class="field__label" for="message">*Message</label>
+                <textarea class="textarea-input js-input" id="message" name="message" rows="10" required></textarea>
+              </div>
+            </div>
+          </div><!-- End l-row -->
+
+          <!-- Submit contact form -->
+          <div class="l-row">
+            <div class="l-row__col">
+              <button id="form-submit" type="submit">Send message</button>
+            </div>
+          </div><!-- End l-row -->
+
+        </div>
+      </form>
+
+    </div><!-- End wrapper -->
+  </body>
+</html>
